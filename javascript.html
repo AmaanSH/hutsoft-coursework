@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <title>Hutsoft</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="images/Hutsoft+medium (1).png" width="100" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <a class="dropdown-item" href="html-page.html">HTML</a>
+                        <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        <a class="dropdown-item" href="php.html">PHP</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="contact.php">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Site heading image -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h3 class="display-4 text-center">Javascript</h3>
+            <p class="lead text-center">JavaScript is a scripting or programming language that allows you to implement complex things on web pages</p>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="about-js">
+            <h3>Javascript Origin</h3>
+            <p>JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was inspired by Java, Scheme and Self</p>
+        </div>
+
+        <hr>
+
+        <div id="js-basics">
+            <h3>Javascript Example</h3>
+            <p>This website incoporates Javascript in many ways to control how content is shown, that's cool right?</p>
+            <p>The button below has some javascript to change its content when clicked, give it a try!</p>     
+            <button id="click-me" class="btn btn-primary">Click Me!</button>               
+        </div>
+
+        <hr>
+
+        <div id="setting-up-button">
+            <h3>Button Setup</h3>
+            <p>The following button uses the <code>getElementById()</code> function which allows you to retrieve an element from the DOM with the specified ID to be able to use in Javascript</p>
+            <p>Once we have the button we add the <code>addEventListener("click", function() {})</code> to add an event on the click to be able to do something.</p>  
+            <p>We use the <code>document.getElementById('click-me').innerHTML</code> to change the html content of the element.</p>
+            <p>I created a new function called <code>GenerateRandomMessage()</code> which uses an array to display a message in the button, here is the snippet of code:</p>     
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        <code>
+                            document.getElementById("click-me").addEventListener("click", function(){ <br>
+                                document.getElementById("click-me").innerHTML = generateRandomMessage(); <br>
+                            }); <br>
+                            
+                            
+                            function generateRandomMessage() <br>
+                            { <br>
+                                var messagePool = <br>
+                                [ <br>
+                                    "You clicked me", <br>
+                                    "Ouch that hurt", <br>
+                                    "Stop clicking me its hurts", <br>
+                                    "OUCH! STOP IT NOW YOU POOPY BRAIN", <br>
+                                ]; <br>
+                            
+                                var number = Math.floor(Math.random() * messagePool.length); <br>
+                                return messagePool[number]; <br>
+                            } <br>                           
+                        </code>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="game">
+            <h3>Javascript Game</h3>
+            <p>Have you heard of FizzBuzz? Well in this game if a number is divisible by 3 you say fizz, if it is divisible by 5 buzz and if it is divisible by both then fizzbuzz!</p>
+            <p>Try it for yourself down below!</p>
+            <div class="card">
+                <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h1 id="number-display">0</h1>
+                            <h4>Current Score: <span id="current-score">0</span></h4>
+                            <h4>Current Round: <span id="current-round">1</span>/<span id="max-rounds">5</span></h4>                       
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-auto align-self-start">
+                            <button class="game-button btn btn-primary" id="fizz" disabled=true>Fizz!</button>
+                        </div>
+
+                        <div class="col-md-auto align-self-center">
+                            <button class="game-button btn btn-primary" id="fizzbuzz" disabled=true>FizzBuzz!</button>
+                        </div>
+
+                        <div class="col-md-auto align-self-end">
+                            <button class="game-button btn btn-primary" id="buzz" disabled=true>Buzz!</button>
+                        </div>
+
+                        <div class="col-md-auto align-self-end">
+                                <button class="game-button btn btn-primary" id="number" disabled=true>Number!</button>
+                            </div>
+
+                        <div class="col-md-auto align-self-end">
+                                <button id="start" class="btn btn-success">START</button>
+                        </div>                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-white pt-4">
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">HUTSOFT</h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Languages</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="javascript.html" class="text-white">Javascript</a>
+                </li>
+                <li>
+                <a href="html-page.html" class="text-white">HTML</a>
+                </li>
+                <li>
+                <a href="php.html" class="text-white">PHP</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="contact.php" class="text-white">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Hutsoft</div>
+    </footer>
+
+    <script src="scripts/page.js"></script>
+    <script src="scripts/fizzbuzz.js"></script>
+    <script src="scripts/javascript-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+    <title>Hutsoft</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/aos.css" />
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="images/Hutsoft+medium (1).png" width="100" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <a class="dropdown-item" href="html-page.html">HTML</a>
+                        <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        <a class="dropdown-item" href="php.html">PHP</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="contact.php">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Site heading container -->
+    <header class="container-fluid heading">   
+        <h3 class="display-4 text-center text-white">Hutsoft creating the new generation of software developers. Today.</h3>
+        <p class="lead text-center text-white">We cover a wide range of languages and provide development services</p>
+
+        <div class="d-flex justify-content-center btn-toolbar">
+            <div class="btn-group mr-2">
+                <a href="html-page.html"><button id="start-learning" type="button" class="btn btn-primary">Start Learning</button></a>
+            </div>
+    
+            <div class="btn-group mr-2">
+                <a href="contact.php"><button type="button" class="btn btn-info">Contact Us</button></a>
+            </div>
+        </div>        
+    </header>
+
+    <!-- Images container -->
+    <div class="container content-container">
+        <h4 class="text-center">We are multi-platform developers specialising in many langauges including:</h4>
+
+        <div class="row d-flex justify-content-center" id="programming-div">
+            <div class="col d-flex justify-content-center align-items-center">
+                <figure class="figure">
+                    <a href="html-page.html"><img src="images/languages/html5.png" class="figure img img-fluid rounded programming-icon"></a>
+                </figure>
+            </div>
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <figure class="figure">
+                    <a href="javascript.html"><img src="images/languages/js.png" class="figure img img-fluid rounded programming-icon"></a>
+                </figure>
+            </div>    
+            
+            <div class="col d-flex justify-content-center align-items-center">
+                <figure class="figure">
+                    <a href="php.html"><img src="images/languages/php.png" class="figure img img-fluid rounded programming-icon" id="php" href="php.html"></a>                
+                </figure>
+            </div>           
+        </div>
+    </div>
+
+    <!-- Full width banner -->
+    <div class="jumbotron jumbotron-fluid content-container">
+        <div class="container">
+            <h3 class="display-4 text-center" data-aos="fade-in">Over 3.8 billion people use the internet today, which is 40% of the world’s population.</h3>
+        </div>
+    </div>
+    
+    <!-- Languages div -->
+    <div id="languages-div" class="container content-container">
+        <div class="row d-flex justify-content-center" data-aos="fade-in">
+            <div class="col d-flex justify-content-center">
+                <img src="images/languages/javascript.jpeg" class="figure img img-fluid rounded programming-banner">
+            </div> 
+
+            <div class="col">
+                <h4>Javascript</h4>
+                <p><strong>JavaScript</strong> is an interpreted, high-level programming language that conforms to the ECMAScript specification.</p>
+                <p>Why should you learn Javascript?</p>
+                <p>Tons of job growth and high pay for those who know JavaScript and it comes installed on every modern web browser, so you can <strong>LITERALLY</strong> start programming in JavaScript this very second on the very browser</p>
+            </div>               
+        </div>
+
+        <div class="row d-flex justify-content-center mt-2" data-aos="fade-in">
+            <div class="col d-flex justify-content-center">
+                <img src="images/languages/html.jpg" class="figure img img-fluid rounded programming-banner">
+            </div> 
+
+            <div class="col">
+                <h4>HTML</h4>
+                <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+            </div>               
+        </div>   
+        
+        <div class="row d-flex justify-content-center mt-2" data-aos="fade-in">
+            <div class="col d-flex justify-content-center">
+                <img src="images/languages/php-banner.jpg" class="figure img img-fluid rounded programming-banner">
+            </div> 
+
+            <div class="col">
+                <h4>PHP</h4>
+                <p>PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group</p>
+            </div>               
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-white pt-4">
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">HUTSOFT</h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Languages</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="javascript.html" class="text-white">Javascript</a>
+                </li>
+                <li>
+                <a href="html-page.html" class="text-white">HTML</a>
+                </li>
+                <li>
+                <a href="php.html" class="text-white">PHP</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="contact.php" class="text-white">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Hutsoft</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>

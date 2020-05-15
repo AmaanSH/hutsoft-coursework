@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <title>Hutsoft</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="images/Hutsoft+medium (1).png" width="100" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <a class="dropdown-item" href="html-page.html">HTML</a>
+                        <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        <a class="dropdown-item" href="php.html">PHP</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="contact.php">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Site heading image -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h3 class="display-4 text-center">PHP</h3>
+            <p class="lead text-center">Hypertext Preprocessor is a general-purpose programming language originally designed for web development.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="php-origin">
+            <h3>What is PHP?</h3>
+            <p>PHP is a widely-used open source scripting language that is suited for web development and can be embedded into html. This web page uses PHP on the <a href="contact.php">Contact</a> page add a new comment to the database and show comments.</p>
+        </div>
+
+        <hr>
+
+        <div id="php-example">
+            <h3>PHP Example</h3>
+            <p>Here is a quick example of some PHP code to display some text in a html file:</p>
+            <div class="card">
+                <div class="card-body">
+                    <code>echo "Hello World"</code>
+                </div>
+            </div>
+            <br>
+            <p>We use <code>echo ""</code> to produce a piece of html that says what you supplied</p>
+        </div>
+
+        <hr>
+
+        <div id="php-server-example">
+            <h3>PHP Server Side</h3>
+            <p>PHP is a server side language and can be used to interact with databases in order to retrieve and set information. Here is an example flow of some html code linking with PHP to interact with a database</p>
+            <img src="images/php-diagram.png">
+            <h4>Diagram Explanation</h4>
+            <ul>
+                <li>User clicks submit in the browser window</li>
+                <li>Submit causes HTTP post method to run, sends data from browser to the webserver</li>
+                <li>Webserver passes the request to the PHP script</li>
+                <li>PHP script runs and interacts with the MySQL database</li>
+                <li>Then heads back to the machine</li>
+            </ul>
+
+            <hr>
+            <p>Here is another example but with a form in HTML:</p>
+            <div class="card">
+                <div class="card-body">
+                    <code>&lt;form action=&quot;RunMe.php&quot; method=&quot;POST&gt; <br> &lt;button action=&quot;submit&gt;RUN ME!&lt;/button&gt; <br> &lt;/form&gt;</code>
+                </div>
+            </div>
+            <br>
+            <p>The following code is ran in the <strong>RunMe.php</strong> file when the submit button is pressed:</p>
+            <div class="card">
+                <div class="card-body">
+                    <code>&lt;?php echo "This is some PHP returning some HTML to your browser using the echo command."; ?&gt;</code>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div id="youtube-video">
+                <h3>YouTube Tutorial - PHP</h3>
+                <div class="row">
+                    <div class="col">
+                        <p>Ready to learn more? Here is a great PHP tutorial on YouTube:</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qVU3V0A05k8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                    </div>
+                </div>           
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-white pt-4">
+        <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">HUTSOFT</h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Languages</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="javascript.html" class="text-white">Javascript</a>
+                </li>
+                <li>
+                <a href="html-page.html" class="text-white">HTML</a>
+                </li>
+                <li>
+                <a href="php.html" class="text-white">PHP</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                <a href="contact.php" class="text-white">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Hutsoft</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
